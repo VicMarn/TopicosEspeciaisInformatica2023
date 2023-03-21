@@ -1,14 +1,14 @@
 function convertRGBtoHex() {
     // Get the values of the red, green, and blue inputs
-    const red = document.getElementById('red').value;
-    const green = document.getElementById('green').value;
-    const blue = document.getElementById('blue').value;
+    const red = parseInt(document.getElementById('red').value);
+    const green = parseInt(document.getElementById('green').value);
+    const blue = parseInt(document.getElementById('blue').value);
   
     // Convert the RGB values to hexadecimal
     const hex = '#' + convertToHex(red) + convertToHex(green) + convertToHex(blue);
   
     // Display the hexadecimal color code on the page
-    document.getElementById('result').textContent = hex;
+    document.getElementById('result').innerText = hex;
   }
   
   function convertToHex(decimal) {

@@ -9,6 +9,7 @@ function convertRGBtoHex() {
   
     // Display the hexadecimal color code on the page
     document.getElementById('result').innerText = hex;
+    document.getElementById('resultLabel').innerText = "Resultado:"
   }
   
   function convertToHex(decimal) {
